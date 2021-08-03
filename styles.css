@@ -86,9 +86,14 @@
 	border: none;
 	outline: none;
 	border-radius: 50px;
-	/* background: #833ab4; */
+	background: #833ab4;
 	background: -webkit-linear-gradient(to right, #f72585, #4cc9f0);
 	background: linear-gradient(to right, #f72585, #4cc9f0);
 	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.navbar-links:hover {
+	color: #9518fc;
 	transition: all 0.3s ease;
 }
