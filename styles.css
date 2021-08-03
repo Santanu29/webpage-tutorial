@@ -33,6 +33,7 @@
 	background-color: #ff8177;
 	background-image: linear-gradient(to bottom right, #f72585 0%, #4cc9f0 100%);
 	background-size: 100%;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -44,4 +45,10 @@
 	font-size: 2rem;
 	font-weight: bold;
 	letter-spacing: 5px;
+}
+
+.navbar-menu {
+	display: flex;
+	align-items: center;
+	list-style: none;
 }
