@@ -44,7 +44,7 @@
 	text-decoration: none;
 	font-size: 2rem;
 	font-weight: bold;
-	letter-spacing: 5px;
+	letter-spacing: 7px;
 }
 
 .navbar-menu {
@@ -107,5 +107,20 @@
 		z-index: 1;
 		max-width: 1300px;
 		padding: 0;
+	}
+
+	.navbar-menu {
+		display: grid;
+		grid-template-columns: auto;
+		margin: 0;
+		width: 100%;
+		position: absolute;
+		top: -1000px;
+		opacity: 1;
+		transition: all 0.5s ease;
+		z-index: -1;
+	}
+
+	.navbar-menu:active {
 	}
 }
