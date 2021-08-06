@@ -143,4 +143,27 @@
 		transform: all 0.3s ease-in-out;
 		background: #fff;
 	}
+
+	.navbar-item {
+		width: 100%;
+	}
+
+	.navbar-links {
+		text-align: center;
+		padding: 2rem;
+		width: 100%;
+		display: table;
+	}
+
+	.navbar-btn {
+		padding-bottom: 2rem;
+	}
+
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		margin-top: 1.6rem;
+	}
 }
