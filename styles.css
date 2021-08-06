@@ -15,7 +15,7 @@
 	font-size: 1.2rem;
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 999;
 }
 
 .navbar-container {
@@ -115,19 +115,19 @@
 		margin: 0;
 		width: 100%;
 		position: absolute;
-		/* top: -1000px; */
+		top: -1000px;
 		opacity: 1;
-		transition: all 0.5s ease;
+		transition: all 0.7s ease;
 		z-index: -1;
-		background: #131313;
+		/* background: #131313; */
 	}
 
-	.navbar-menu:active {
+	.navbar-menu.active {
 		background: #131313;
 		top: 100%;
 		opacity: 1;
-		transform: all 0.5s ease;
-		z-index: 50;
+		transition: all 0.7s ease;
+		z-index: 99;
 		height: 60vh;
 		font-size: 1.6rem;
 	}
@@ -140,7 +140,7 @@
 		width: 25px;
 		height: 3px;
 		margin: 5px auto;
-		transform: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		background: #fff;
 	}
 
@@ -165,5 +165,29 @@
 		align-items: center;
 		width: 80%;
 		margin-top: 1.6rem;
+	}
+
+	#mobile-menu {
+		position: absolute;
+		top: 20%;
+		right: 5%;
+		transform: translate(5%, 20%);
+		cursor: pointer;
+	}
+
+	.navbar-toggle .bar {
+		display: block;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	#mobile-menu.is-active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	#mobile-menu.is-active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
 	}
 }
