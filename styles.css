@@ -115,10 +115,11 @@
 		margin: 0;
 		width: 100%;
 		position: absolute;
-		top: -1000px;
+		/* top: -1000px; */
 		opacity: 1;
 		transition: all 0.5s ease;
 		z-index: -1;
+		background: #131313;
 	}
 
 	.navbar-menu:active {
@@ -133,5 +134,13 @@
 
 	#nav-logo {
 		padding-left: 25px;
+	}
+
+	.navbar-toggle .bar {
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		transform: all 0.3s ease-in-out;
+		background: #fff;
 	}
 }
